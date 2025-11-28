@@ -14,6 +14,6 @@ services:
     ports:
       - "8002:8000"
     networks:
-    - labnet
+      - labnet
 networks:
   labnet:

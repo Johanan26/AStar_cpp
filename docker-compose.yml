@@ -3,8 +3,8 @@ services:
     image: ghcr.io/johanan26/cicd2_lab6_service_a/service_a:latest
     ports:
       - "8001:8000"
-  networks:
-    - labnet
+    networks:
+      - labnet
 
   service_b:
     image: ghcr.io/johanan26/cicd2_lab6_service_b/service_b:latest

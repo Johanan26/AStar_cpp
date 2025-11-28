@@ -6,14 +6,14 @@ services:
   networks:
     - labnet
 
-service_b:
-  image: ghcr.io/johanan26/cicd2_lab6_service_b/service_b:latest
-  env_file: ./.env
-  depends_on:
-    - service_a
-  ports:
-    - "8002:8000"
+  service_b:
+    image: ghcr.io/johanan26/cicd2_lab6_service_b/service_b:latest
+    env_file: ./.env
+    depends_on:
+      - service_a
+    ports:
+      - "8002:8000"
+    networks:
+    - labnet
   networks:
-  - labnet
-networks:
-  labnet:
+    labnet:
